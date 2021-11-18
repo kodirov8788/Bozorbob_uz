@@ -10,8 +10,6 @@ import valid from "../utils/valid";
 import { patchData } from "../utils/fetchData";
 import ReactPlayer from "react-player";
 import { imageUpload } from "../utils/imageUpload";
-import { Player } from "video-react";
-import "../node_modules/video-react/dist/video-react.css";
 const Profile = () => {
   const initialSate = {
     avatar: "",
