@@ -17,6 +17,7 @@ import Filter from "./Filter";
 import en from "../locales/en";
 import uz from "../locales/uz";
 import LanguageSelect from "../pages/LanguageSelect";
+import MediaLanguageSelect from "../pages/MediaLanguageSelect";
 function NavBar() {
   const router = useRouter();
 
@@ -161,12 +162,11 @@ function NavBar() {
           </div>
           <a href="tel:+998939427899" className="nav__phone">
             <h4>(93) 942-78-99</h4>
-            {/* <h1>{t.description}</h1> */}
-            {/* <h5>{t("Contact__Number")}</h5> */}
           </a>
         </div>
       </nav>
       <LanguageSelect />
+      <MediaLanguageSelect />
     </>
   );
 }

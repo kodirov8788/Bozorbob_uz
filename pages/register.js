@@ -55,8 +55,8 @@ const Register = () => {
       </Head>
 
       <form
-        className="mx-auto my-4"
-        style={{ maxWidth: "500px" }}
+        className=".signin__formContainer"
+        // style={{ maxWidth: "500px" }}
         onSubmit={handleSubmit}
       >
         <div className="form-group">
@@ -111,7 +111,7 @@ const Register = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-dark w-100">
+        <button type="submit" className="signin__btn">
           {t.Register}
         </button>
 

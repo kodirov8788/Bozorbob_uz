@@ -54,7 +54,7 @@ a {
 .mediaNavbar__cart {
   /* border: 2px solid #000; */
   width: 50px;
-  margin-left: 50px;
+  margin-left: 30px;
   margin-bottom: 5px;
   /* background-color: #ccc; */
 }
@@ -211,7 +211,7 @@ a {
     font-size: 30px;
   }
   .mediaNavbar__cart {
-    margin-left: 80px;
+    margin-left: 70px;
   }
 
   .mediaNavbar__brand {
@@ -238,6 +238,7 @@ a {
   }
   .mediaNav__menuBar {
     position: relative;
+    margin-right: 20px;
   }
   .mediaNav__mediaPlus {
     position: absolute;
@@ -276,5 +277,14 @@ a {
   .mediaNav__mediaPlus li:hover {
     transform: scale(1.1);
     color: var(--main-color);
+  }
+}
+@media screen and (max-width: 330px) {
+  .mediaNav__menuBar {
+    position: relative;
+    margin-right: 20px;
+  }
+  .mediaNavbar__cart {
+    margin-left: 50px;
   }
 }

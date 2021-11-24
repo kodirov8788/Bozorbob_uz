@@ -1,0 +1,18 @@
+.signin__formContainer {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 100px auto;
+}
+.signin__btn {
+  width: 70%;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 4px;
+  margin: 0 15%;
+}

@@ -4,10 +4,12 @@ import React, { useContext, useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import filterSearch from "../utils/filterSearch";
 import { DataContext } from "../store/GlobalState";
-import { FiSearch, FiSmartphone } from "react-icons/fi";
+import { FiSearch, FiPhoneCall } from "react-icons/fi";
 import { FaRegUserCircle } from "react-icons/fa";
 import { BiLogInCircle, BiCategory } from "react-icons/bi";
 import Cookie from "js-cookie";
+import en from "../locales/en";
+import uz from "../locales/uz";
 
 const MediaFooter = () => {
   const { state, dispatch } = useContext(DataContext);
@@ -46,6 +48,8 @@ const MediaFooter = () => {
     setSearch("");
   };
 
+  const { locale } = router;
+  const t = locale === "en" ? en : uz;
   // -----------------
   const isActive = (r) => {
     if (r === router.pathname) {
@@ -107,7 +111,7 @@ const MediaFooter = () => {
       >
         <div className="mediaFooter__listItems">
           <BiCategory />
-          <p>Contact</p>
+          <p>{t.Categories}</p>
         </div>
 
         <div
@@ -166,7 +170,7 @@ const MediaFooter = () => {
       >
         <a href="#" className="mediaFooter__listItems">
           <FiSearch />
-          <p>Search</p>
+          <p>{t.search}</p>
         </a>
       </li>
       <div
@@ -209,7 +213,7 @@ const MediaFooter = () => {
             <Link href="/signin">
               <a className={"mediaFooter__logged" + isActive("/signin")}>
                 <BiLogInCircle style={{ marginLeft: "5px" }} />
-                <p>Sign In</p>
+                <p>{t.Signin}</p>
               </a>
             </Link>
           </div>
@@ -223,10 +227,12 @@ const MediaFooter = () => {
           setUserClick(false) + setSearchClick(false) + setStatus(false)
         }
       >
-        <a href="#" className="mediaFooter__listItems">
-          <FiSmartphone />
-          <p>Contact</p>
-        </a>
+        <Link href="/about/aboutus">
+          <a href="#" className="mediaFooter__listItems">
+            <FiPhoneCall />
+            <p>{t.contactus}</p>
+          </a>
+        </Link>
       </li>
     </div>
   );

@@ -107,16 +107,19 @@ function MediaNavBar() {
             }
           >
             <li onClick={() => setClick(false)}>
-              <a href="#">About Us</a>
+              <Link href="/about/aboutus">
+                <a>About us</a>
+              </Link>
             </li>
             <li onClick={() => setClick(false)}>
-              <a href="#">About Us</a>
+              <Link href="/about/blog">
+                <a>The blog</a>
+              </Link>
             </li>
             <li onClick={() => setClick(false)}>
-              <a href="#">About Us</a>
-            </li>
-            <li onClick={() => setClick(false)}>
-              <a href="#">About Us</a>
+              <Link href="/about/office">
+                <a>The office</a>
+              </Link>
             </li>
           </div>
         </div>

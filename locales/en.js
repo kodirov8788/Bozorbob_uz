@@ -45,4 +45,7 @@ export default {
   order_items: "Order Items",
   Pay_by_this_services: "Pay by this services",
   contact_us: "Contact us",
+  search: "Search",
+  Signin: "Sign in",
+  contactus: "Contact us",
 };

@@ -17,7 +17,7 @@ export default {
   not__have__account: "Siz hali ro`yhatdan otmagan bo`lsangiz?",
   Register__Now: "Ro`yhatdan O`ting",
   Sign__in: "Saytga tashrif",
-  Categories: "Kategoriyalar",
+  Categories: "Toifalar",
   price: "Narxi",
   InStock: "Sotuvda qolgani",
   sold: "Sotildi",
@@ -46,4 +46,7 @@ export default {
   order_items: "Buyurtma mahsulotlar",
   Pay_by_this_services: "Bu xizmatlar orqali to`lov qilishingiz mumkin",
   contact_us: "Bizga aloqaga chiqing!",
+  search: "Qidiruv",
+  Signin: "Kirish",
+  contactus: "Bog`lanish",
 };

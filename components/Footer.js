@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -8,20 +9,28 @@ const Footer = () => {
         <ul className="About">
           <h2>About us</h2>
           <li>
-            <a href="#">Our Story</a>
+            <Link href="/about/aboutus">
+              <a>About Us</a>
+            </Link>
           </li>
           <li>
-            <a href="#">Contact us</a>
+            <Link href="/about/connect">
+              <a>How to connect us</a>
+            </Link>
           </li>
           <li>
-            <a href="#">Policy</a>
+            <Link href="/about/delevery">
+              <a>Delevery</a>
+            </Link>
           </li>
           <li>
-            <a href="#">Carreer</a>
+            <Link href="/about/services">
+              <a>Our services</a>
+            </Link>
           </li>
         </ul>
 
-        <ul className="Shop">
+        {/* <ul className="Shop">
           <h2>Shop by</h2>
           <li>
             <a href="#">New Arrival</a>
@@ -35,36 +44,47 @@ const Footer = () => {
           <li>
             <a href="#">Sale Off</a>
           </li>
-        </ul>
+        </ul> */}
 
         <ul className="Support">
           <h2>Support</h2>
           <li>
-            <a href="#">The Blog</a>
+            <Link href="/about/blog">
+              <a>The blog</a>
+            </Link>
           </li>
           <li>
-            <a href="#">FAQs</a>
+            <Link href="/about/faqs">
+              <a>FAQs</a>
+            </Link>
           </li>
           <li>
-            <a href="#">Order Tracking</a>
+            <Link href="/about/ordertraking">
+              <a>The order traking</a>
+            </Link>
           </li>
           <li>
-            <a href="#">Shipping and Returns</a>
+            <Link href="/about/shipping">
+              <a>Shipping</a>
+            </Link>
           </li>
         </ul>
         <ul className="Address">
           <h2>Address</h2>
           <li>
-            <a href="#">PO Box 16122 Collins</a>
+            <Link href="/about/office">
+              <a>Office address</a>
+            </Link>
           </li>
           <li>
-            <a href="#">Victoria 8007 Australia-Map</a>
+            <Link href="/about/production">
+              <a>Production address</a>
+            </Link>
           </li>
           <li>
-            <a href="#">+61 3 8376 6284</a>
-          </li>
-          <li>
-            <a href="#">Alitstudios@gmail.com</a>
+            <Link href="/about/number">
+              <a>Phone number</a>
+            </Link>
           </li>
         </ul>
 

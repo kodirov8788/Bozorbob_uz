@@ -111,3 +111,7 @@ img {
 
 /* ----------- Youtube ------------- */
 @import url("./Youtube.css");
+/* ----------- About ------------- */
+@import url("./about.css");
+/* ----------- Sign in ------------- */
+@import url("./Signin.css");

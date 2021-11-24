@@ -77,7 +77,7 @@ const Filter = () => {
           <option value="-price">Price: Hight-Low</option>
           <option value="price">Price: Low-Hight</option>
         </select>
-      </div>*/}
+      </div> */}
     </div>
   );
 };

@@ -60,11 +60,7 @@ const Signin = () => {
         <title>{t.Sign__in__Page}</title>
       </Head>
 
-      <form
-        className="mx-auto my-4"
-        style={{ maxWidth: "500px" }}
-        onSubmit={handleSubmit}
-      >
+      <form className="signin__formContainer" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">{t.Email__address}</label>
           <input
@@ -103,7 +99,7 @@ const Signin = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-dark w-100">
+        <button type="submit" className="signin__btn">
           {t.Sign__in__Page}
         </button>
 

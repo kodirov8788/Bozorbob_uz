@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
-function LanguageSelect() {
+function MediaLanguageSelect() {
   const router = useRouter();
   const [lang, setLang] = useState("uz");
   const [langImg, setLangImg] = useState(
@@ -39,27 +39,30 @@ function LanguageSelect() {
   const [status, setStatus] = useState(false);
 
   return (
-    <div className="LangugeSelect__headerLanguage">
+    <div className="MediaLangugeSelect__headerLanguage">
       <div
-        className="language__taskAdderSelect"
-        onMouseEnter={() => setStatus(true)}
-        onMouseLeave={() => setStatus(false)}
+        className="medialanguage__taskAdderSelect"
+        onClick={() => setStatus(!status)}
       >
-        <p>{lang}</p>
         <img src={langImg} alt={langImg} />
+        <p>{lang}</p>
         <div
           className={
-            status ? "language__taskAdderStatus" : "language__taskHide__status"
+            status
+              ? "Medialanguage__taskAdderStatus"
+              : "medialanguage__taskHide__status"
           }
         >
           {language_items.map((item) => (
             <div
               href="/"
-              className="language__status"
+              className="medialanguage__status"
               onMouseEnter={() => setStatus(true)}
               onMouseLeave={() => setStatus(false)}
               onClick={() =>
-                setLang(item.languageCode) + setLangImg(item.languageImage)
+                setLang(item.languageCode) +
+                setLangImg(item.languageImage) +
+                setStatus(false)
               }
               key={item.id}
               value={item.id}
@@ -74,4 +77,4 @@ function LanguageSelect() {
   );
 }
 
-export default LanguageSelect;
+export default MediaLanguageSelect;
