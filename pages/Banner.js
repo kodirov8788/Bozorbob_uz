@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
-// import "./styles.css";
 import SwiperCore, {
   EffectCoverflow,
   Pagination,
@@ -9,11 +9,8 @@ import SwiperCore, {
   Autoplay,
 } from "swiper/core";
 SwiperCore.use([EffectCoverflow, Pagination, Navigation, Autoplay]);
-// import "swiper/swiper.min.css";
 import "swiper/css";
-// import "swiper/components/effect-coverflow/effect-coverflow.min.css";
-// import "swiper/components/pagination/pagination.min.css";
-// import "swiper/components/navigation/navigation.min.css";
+
 function Banner() {
   return (
     <div className="main__banner">
@@ -33,15 +30,53 @@ function Banner() {
         className="mySwiper"
       >
         <SwiperSlide className="image_slider_change">
-          <img
-            src="https://texnomart.uz/frontend/web/uploads/slides/379434onlinepay.jpg"
-            alt=""
+          <Image
+            // loader={myLoader}
+            src="/essets/pexels.jpg"
+            alt="Picture of the author"
+            width={1920}
+            height={800}
+            layout="responsive"
           />
         </SwiperSlide>
         <SwiperSlide className="image_slider_change">
-          <img
-            src="https://texnomart.uz/frontend/web/uploads/slides/250798iphone13.jpg"
-            alt=""
+          <Image
+            // loader={myLoader}
+            src="/essets/pexels-2.jpg"
+            alt="Picture of the author"
+            width={1920}
+            height={800}
+            layout="responsive"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="image_slider_change">
+          <Image
+            // loader={myLoader}
+            src="/essets/pexels-3.png"
+            alt="Picture of the author"
+            width={1920}
+            height={800}
+            layout="responsive"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="image_slider_change">
+          <Image
+            // loader={myLoader}
+            src="/essets/pexels-4.png"
+            alt="Picture of the author"
+            width={1920}
+            height={800}
+            layout="responsive"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="image_slider_change">
+          <Image
+            // loader={myLoader}
+            src="/essets/pexels-5.png"
+            alt="Picture of the author"
+            width={1920}
+            height={800}
+            layout="responsive"
           />
         </SwiperSlide>
       </Swiper>

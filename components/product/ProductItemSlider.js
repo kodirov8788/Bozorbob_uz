@@ -26,10 +26,10 @@ const ProductItem__slider = ({ product, handleCheck }) => {
     return (
       <>
         <Link href={`product/${product._id}`}>
-          <div className="productItemSlider__btnView">
+          <a className="productItemSlider__btnView">
             <GrView />
             <p>{t.view}</p>
-          </div>
+          </a>
         </Link>
         <button
           className="btn__buy"

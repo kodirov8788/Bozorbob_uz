@@ -55,7 +55,7 @@ const Register = () => {
       </Head>
 
       <form
-        className=".signin__formContainer"
+        className="signin__formContainer"
         // style={{ maxWidth: "500px" }}
         onSubmit={handleSubmit}
       >
